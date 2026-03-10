@@ -39,6 +39,6 @@ def createData():
     }
         
     df = pd.DataFrame(data)
-    df.to_csv("data.csv",sep="\t",encoding="utf-8")
+    df.to_csv("data.csv",encoding="utf-8", index=False)
 
 createData()
